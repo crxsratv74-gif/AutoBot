@@ -9,7 +9,7 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TOKEN = os.getenv("8091015409:AAEq1Q2T2YeH83ku-DYJMxcdisdXGtEtEaM")
 
 async def approve_join(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.chat_join_request.chat.id
@@ -22,3 +22,4 @@ app.add_handler(ChatJoinRequestHandler(approve_join))
 
 if __name__ == '__main__':
     app.run_polling()
+
